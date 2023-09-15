@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tugas 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="">home</a>
+        </li>
+        <li>
+          <a href="">product</a>
+        </li>
+        <li>
+          <a href="">gallery</a>
+        </li>
+        <li>
+          <a href="">blog</a>
+        </li>
+        <li>
+          <a href="">my inventory</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <section>
+        <img id="target-img" src="https://blog.hacktiv8.com/content/images/2018/01/AppIcon.jpg" alt="" />
+      </section>
+      <section>
+        <h2 id="target-name">Nama Anda</h2>
+        <p id="target-role">Front End Designer</p>
+        <button id="editButton" class="btn btn-white">Edit</button>
+      </section>
+      <section>
+        <p>Availability</p>
+        <p>Usia</p>
+        <p>Lokasi</p>
+        <p>Pengalaman</p>
+        <p>Email</p>
+      </section>
+      <section>
+        <p id="target-av">Full Time</p>
+        <p id="target-age">19 tahun</p>
+        <p id="target-loc">Jakarta</p>
+        <p id="target-exp">2 tahun</p>
+        <p id="target-email">email@gmail.com</p>
+      </section>
+    </header>
+    <form action="" id="myForm">
+      <section class="my-img">
+        <img src="https://merdeka-filkom.ub.ac.id/wp-content/uploads/2018/11/Vector-Smart-Object.png" alt="" />
+      </section>
+      <section class="my-form">
+        <div class="group-form">
+          <label for="form-name">Nama</label>
+          <input type="text" id="form-name" name="username" required />
+        </div>
+        <div class="group-form">
+          <label for="form-role">Role</label>
+          <input type="text" id="form-role" name="userrole" required />
+        </div>
+        <div class="group-form">
+          <label for="form-av">Availability</label>
+          <select id="form-av" name="form-av">
+            <option value="Full Time">Full Time</option>
+            <option value="Part Time">Part Time</option>
+            <option value="WFH">WFH</option>
+          </select>
+        </div>
+        <div class="group-form">
+          <label for="form-age">Usia</label>
+          <input type="number" id="form-age" name="userage" required />
+        </div>
+        <div class="group-form">
+          <label for="form-loc">Lokasi</label>
+          <input type="text" id="form-loc" name="userloc" required />
+        </div>
+        <div class="group-form">
+          <label for="form-exp">Years Experience</label>
+          <input type="number" id="form-exp" name="userexp" required />
+        </div>
+        <div class="group-form">
+          <label for="form-email">Email</label>
+          <input type="email" id="form-email" pattern=".+@gmail\.com" name="useremail" required />
+        </div>
+        <div class="group-form">
+          <label for="form-img">Foto</label>
+          <input type="file" id="form-img" name="userimg" accept="image/png, image/jpg" required />
+        </div>
+
+        <button id="submit-button" class="btn btn-submit" type="submit">Submit</button>
+      </section>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
